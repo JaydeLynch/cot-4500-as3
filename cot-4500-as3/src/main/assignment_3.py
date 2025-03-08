@@ -1,3 +1,5 @@
+import numpy as np
+
 def euler_method(f, t0, y0, h, n):
 
 #f - derivative func
