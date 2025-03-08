@@ -1,10 +1,9 @@
-
 def euler_method(f, t0, y0, h, n):
-"""
-f - derivative func
-n-number of iterations
-h-step size
-"""
+
+#f - derivative func
+#n-number of iterations
+#h-step size
+
     t = np.zeros(n+1)
     y = np.zeros(n+1)
     t[0] = t0 # initialize
@@ -17,11 +16,10 @@ h-step size
     return t, y #returns the array of time points and array of solutions
 
 def runge_kutta_4th_order(f, t0, y0, h, n):
-    """
-4th-order Runge-Kutta method for solving differential equations.
     
-Same  Parameters as previous function
-    """
+#4th-order Runge-Kutta method for solving differential equations.
+    
+#Same  Parameters as previous function
     t = np.zeros(n+1)
     y = np.zeros(n+1)
     t[0] = t0
